@@ -12,6 +12,7 @@
 		11866AA029E845D1000D9379 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11866A9F29E845D1000D9379 /* MainViewController.swift */; };
 		11866AA529E845D2000D9379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11866AA429E845D2000D9379 /* Assets.xcassets */; };
 		11866AA829E845D2000D9379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11866AA629E845D2000D9379 /* LaunchScreen.storyboard */; };
+		11866AB529E84AD3000D9379 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 11866AB429E84AD3000D9379 /* GLTFSceneKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11866AB529E84AD3000D9379 /* GLTFSceneKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,9 @@
 			dependencies = (
 			);
 			name = ARExample;
+			packageProductDependencies = (
+				11866AB429E84AD3000D9379 /* GLTFSceneKit */,
+			);
 			productName = ARExample;
 			productReference = 11866A9829E845D1000D9379 /* ARExample.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 11866A8F29E845D1000D9379;
+			packageReferences = (
+				11866AB329E84AD3000D9379 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
+			);
 			productRefGroup = 11866A9929E845D1000D9379 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -393,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11866AB329E84AD3000D9379 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magicien/GLTFSceneKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11866AB429E84AD3000D9379 /* GLTFSceneKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11866AB329E84AD3000D9379 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;
+			productName = GLTFSceneKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11866A9029E845D1000D9379 /* Project object */;
 }
