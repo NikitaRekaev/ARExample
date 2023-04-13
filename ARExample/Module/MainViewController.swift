@@ -41,6 +41,8 @@ final class MainViewController: UIViewController {
 
 }
 
+// MARK: - ARSCNViewDelegate
+
 extension MainViewController: ARSCNViewDelegate {
 
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
